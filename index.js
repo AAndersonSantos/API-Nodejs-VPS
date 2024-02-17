@@ -9,6 +9,10 @@ const routes = require("./src/routes/route");
 
 app.use(routes)
 
+app.get('/', (req, res) => {
+    res.send("Hello World!")
+})
+
 app.listen(port, () => {
     console.log("Servidor conectado na porta: " + port)
 })
